@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Appointment Page</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="order">
+        <form id="formOne">
+          <div class="form-group">
+            <h1>Place an order below:</h1>
+            <label for="name">Enter your Name:</label>
+            <input id="name" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="address">Enter your address:</label>
+            <input id="address" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="item">Please choose your item:</label>
+            <select class="form-control" id="item">
+              <option>ring</option>
+              <option>bracelet</option>
+              <option>necklace</option>
+              <option>earring</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="ship">Shipping:</label>
+            <div class="radio">
+              <label>
+                <input type="radio" name="ship" value="pick-up" checked>
+                pick-up
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="ship" value="Air">
+                Air
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="ship" value="Ground">
+                Ground
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn">Submit form.</button>
+        </form>
+      </div>
+      <div id="reciept">
+        <p>This is a reciept</p>
+        <p>Thank you <span class="name"></span> for purchasing a <span class="item"></span>. It will be delievered by <span class="ship"></span> to <span class="address"></span>.</p>
+      </div>
+    </div>
+  </body>
+</html>
